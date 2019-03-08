@@ -58,14 +58,14 @@
 
     //function gets messages from database
     function getMessages(){
-      $.get('http://localhost:3000/messages', (data) => {
+      $.get('https://comp3133-chatapp.herokuapp.com/messages', (data) => {
         data.forEach(addMessages);
       })
     }
 
     //function sends messages to database
     function sendMessage(message){
-      $.post('http://localhost:3000/messages', message)
+      $.post('https://comp3133-chatapp.herokuapp.com/messages', message)
       
     }
   }// on socket disconnect
